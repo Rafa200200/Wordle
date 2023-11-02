@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="198.0" prefWidth="549.0" spacing="20.0" style="-fx-border-color: #ffffff; -fx-border-width: 3; -fx-background-color: #89cff0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wordle.language">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label text="Choose your language:">
+         <font>
+            <Font name="Berlin Sans FB" size="36.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="90.0" prefWidth="421.0" spacing="25.0">
+         <children>
+            <ImageView fx:id="bt_fr" fitHeight="88.0" fitWidth="135.0" onMouseClicked="#click_fr" onMouseEntered="#mouse_entered" onMouseExited="#mouse_exit" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 50%;">
+               <image>
+                  <Image url="@FR.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bt_uk" fitHeight="122.0" fitWidth="174.0" onMouseClicked="#click_uk" onMouseEntered="#mouse_entered" onMouseExited="#mouse_exit" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 50%;" HBox.hgrow="SOMETIMES">
+               <image>
+                  <Image url="@UK.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bt_pt" fitHeight="88.0" fitWidth="142.0" onMouseClicked="#click" onMouseEntered="#mouse_entered" onMouseExited="#mouse_exit" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 50%;">
+               <image>
+                  <Image url="@PT.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</VBox>

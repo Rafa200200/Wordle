@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="515.0" spacing="20.0" style="-fx-border-color: #ffffff; -fx-border-width: 3; -fx-background-color: #89cff0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wordle.pt_lvl4_controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+      <children>
+         <Label fx:id="box00" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+               <Font size="48.0" />
+            </font>
+         </Label>
+         <Label fx:id="box01" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+               <Font size="48.0" />
+            </font>
+         </Label>
+         <Label fx:id="box02" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+               <Font size="48.0" />
+            </font>
+         </Label>
+         <Label fx:id="box03" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+               <Font size="48.0" />
+            </font>
+         </Label>
+         <Label fx:id="box04" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+               <Font size="48.0" />
+            </font>
+         </Label>
+         <Label fx:id="box05" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;" textAlignment="CENTER">
+            <font>
+               <Font size="48.0" />
+            </font>
+         </Label>
+      </children>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+   </HBox>
+   <TextField fx:id="guessInput" maxWidth="-Infinity" prefHeight="34.0" prefWidth="160.0" />
+    <Button fx:id="bt" onAction="#checkGuess" prefHeight="49.0" prefWidth="160.0" text="Testar">
+      <font>
+         <Font name="Gill Sans MT" size="25.0" />
+      </font></Button>
+   <HBox prefHeight="2.0" prefWidth="475.0" spacing="10.0">
+      <children>
+         <Label fx:id="welcomeText1" text="Tentatives restantes:">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="t">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font>
+         </Label>
+         <Label prefHeight="18.0" prefWidth="256.0" />
+         <ImageView fx:id="home_bt" fitHeight="28.0" fitWidth="33.0" onMouseClicked="#click_home" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@home-icon-silhouette.png" />
+            </image>
+         </ImageView>
+      </children>
+   </HBox>
+</VBox>
